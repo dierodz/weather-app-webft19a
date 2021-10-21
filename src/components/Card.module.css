@@ -1,0 +1,52 @@
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 0.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr;
+  align-items: center;
+
+  position: relative;
+}
+
+.cityName {
+  grid-column: 1 / span 3;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.closeButton {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--btn-danger-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.25rem;
+
+  border-radius: 9999px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent;
+  background-color: transparent;
+
+  transition: 250ms;
+}
+
+.closeButton:hover {
+  color: white;
+  background-color: var(--btn-danger-color);
+}
+
+@media screen and (min-width: 576px) {
+  .card {
+    width: 25rem;
+  }
+}

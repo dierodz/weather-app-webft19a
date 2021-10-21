@@ -1,0 +1,14 @@
+.cardTemp {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTemp > label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.cardTemp > span {
+  font-weight: 700;
+  font-size: 1rem;
+}
